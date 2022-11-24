@@ -3,12 +3,6 @@ from django.db.models import Max
 
 
 # Create your models here.
-class User(models.Model):
-    name = models.CharField(max_length=20)
-
-    def __str__(self):
-        return self.name
-
 
 class Shop(models.Model):
     name = models.CharField(max_length=50)

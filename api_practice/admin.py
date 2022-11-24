@@ -3,10 +3,6 @@ from .models import User, Shop, Supplier, Order
 
 
 # Register your models here.
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ['name']
-
 
 @admin.register(Shop)
 class UserAdmin(admin.ModelAdmin):
