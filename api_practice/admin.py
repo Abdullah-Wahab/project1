@@ -1,19 +1,19 @@
 from django.contrib import admin
-from .models import User, Shop, Supplier, Order
+from .models import Shop, Supplier, Order
 
 
 # Register your models here.
 
 @admin.register(Shop)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ['name', 'address', 'phone']
+class ShopAdmin(admin.ModelAdmin):
+    list_display = ['name', 'address', 'supplier']
 
 
 @admin.register(Supplier)
-class UserAdmin(admin.ModelAdmin):
+class SupplierAdmin(admin.ModelAdmin):
     list_display = ['name', 'address']
 
 
 @admin.register(Order)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ['supplier', 'materials', 'quantity', 'shop']
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ['supplier', 'material', 'quantity', 'shop']
